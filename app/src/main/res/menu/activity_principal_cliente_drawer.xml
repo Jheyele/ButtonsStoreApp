@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/agenda1"
+            android:id="@+id/realizar_pedido"
+            android:title="Realizar Pedido" />
+        <item
+            android:icon="@drawable/caixa2"
+            android:id="@+id/visualizar_produtos"
+            android:title="Produtos" />
+        <item
+            android:icon="@drawable/meuspedidos"
+            android:id="@+id/meus_pedidos"
+            android:title="Meus Pedidos" />
+        <item
+            android:id="@+id/chat"
+            android:icon="@drawable/chatb"
+            android:title="Fale Conosco" />
+
+    </group>
+
+    <item>
+        <menu>
+            <item
+                android:id="@+id/menuClienteConf"
+                android:icon="@drawable/conf"
+                android:title="Configuração" />
+
+            <item
+                android:id="@+id/menuClienteSair"
+                android:icon="@drawable/x"
+                android:title="Sair" />
+        </menu>
+    </item>
+
+</menu>

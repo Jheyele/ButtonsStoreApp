@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CadastroProdutoActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_margin="16sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cadastro Produto"
+                android:textAlignment="center"
+                android:textSize="26sp" />
+
+
+            <ImageView
+                android:id="@+id/cadProdutoImagem"
+                android:layout_width="200sp"
+                android:layout_height="200sp"
+                android:src="@drawable/semimagem"
+                android:layout_gravity="center"/>
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/cadProdutoNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome"
+                app:bootstrapSize="xl"
+                app:bootstrapBrand="info"
+                app:roundedCorners="true"
+                android:layout_marginTop="8sp"/>
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/cadProdutoPreco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Preço Unitario"
+                android:inputType="numberDecimal"
+                app:bootstrapSize="xl"
+                app:bootstrapBrand="info"
+                app:roundedCorners="true"
+                android:layout_marginTop="8sp"/>
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/cadProdutoDescricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Descrição"
+                app:bootstrapSize="xl"
+                app:bootstrapBrand="info"
+                app:roundedCorners="true"
+                android:layout_marginTop="8sp"/>
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/btnCadastrarProduto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cadastrar"
+                app:bootstrapBrand="success"
+                app:bootstrapSize="xl"
+                app:buttonMode="regular"
+                app:showOutline="false"
+                app:roundedCorners="true"
+                android:layout_marginTop="10sp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

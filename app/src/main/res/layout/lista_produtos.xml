@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutListaProdutos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8sp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imagemProdutoLista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15sp">
+
+            <TextView
+                android:id="@+id/txtViewNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome_Produto"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtViewPreco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Preco_Produto"
+                android:layout_marginTop="5sp"/>
+
+            <TextView
+                android:id="@+id/txtViewDescricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descricao_Produto"
+                android:layout_marginTop="5sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1sp"
+        android:background="@color/bootstrap_gray"
+        android:layout_marginBottom="15sp"
+        android:layout_marginTop="15sp"
+        android:focusable="false"/>
+
+
+</LinearLayout>

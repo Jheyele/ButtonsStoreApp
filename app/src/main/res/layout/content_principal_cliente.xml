@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branco"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.PrincipalClienteActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:showIn="@layout/app_bar_principal_cliente">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loja Virtual"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80sp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/inicioCadPedido"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:src="@drawable/pedido"
+                    android:layout_gravity="center" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Realizar Pedidos"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="50sp">
+                <ImageView
+                    android:id="@+id/inicioVerProdutos"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:src="@drawable/caixa2"
+                    android:layout_gravity="center" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Ver Produtos"/>
+            </LinearLayout>
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="80sp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="25sp">
+                <ImageView
+                    android:id="@+id/inicioVerMeusPedidos"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:src="@drawable/meuspedidos"
+                    android:layout_gravity="center" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Meus Pedidos"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="50sp">
+                <ImageView
+                    android:id="@+id/inicioChatbot"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:src="@drawable/chatb"
+                    android:layout_gravity="center" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Duvidas? Fale conosco."/>
+            </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

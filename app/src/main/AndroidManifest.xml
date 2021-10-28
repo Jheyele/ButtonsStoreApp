@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jheyeleraquel.buttonsstore">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bs"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.CadastroClienteActivity" />
+        <activity
+            android:name=".Activity.PrincipalClienteActivity"
+            android:label="@string/title_activity_principal_cliente"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activity.CadastroProdutoActivity" />
+        <activity android:name=".Activity.CadastroPedidoActivity" />
+        <activity android:name=".Activity.AdministradorActivity" />
+        <activity android:name=".Activity.ListaProdutosActivity" />
+        <activity android:name=".Activity.ListaPedidosActivity" />
+        <activity android:name=".Activity.ConfiguracaoClienteActivity" />
+        <activity android:name=".Activity.EditarClienteActivity" />
+        <activity android:name=".Activity.ListaPedidosProntosActivity" />
+        <activity android:name=".Activity.ListaMeusPedidosActivity"></activity>
+    </application>
+
+</manifest>
